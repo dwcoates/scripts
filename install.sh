@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 binary_path="$HOME/bin"
-declare -a scripts=(screenshot.sh screencast.sh)
+declare -a scripts=(screenshot.sh screencast.sh starbucks_wifi_connect.sh)
 
 echo "Adding scripts files to $binary_path: ${scripts[@]}"
 for c in "${scripts[@]}"; do
