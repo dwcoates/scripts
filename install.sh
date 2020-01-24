@@ -13,5 +13,5 @@ for c in "${scripts[@]}"; do
         rm $P
     fi
 
-    ln -s $(dirname "$0")/$c $P
+    ln -s $(readlink -f $(dirname "$0"))/$c $P
 done
