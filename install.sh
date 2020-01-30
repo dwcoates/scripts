@@ -15,3 +15,11 @@ for c in "${scripts[@]}"; do
 
     ln -s $(readlink -f $(dirname "$0"))/$c $P
 done
+
+read -p "Install dependencies (Y/n)?" -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    # Install shutter
+    sudo add-apt-repository ppa:linuxuprising/shutter
+    sudo apt install shutter
+fi
