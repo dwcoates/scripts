@@ -23,4 +23,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     # Install shutter
     sudo add-apt-repository ppa:linuxuprising/shutter
     sudo apt install shutter
+    sudo apt install xcape
 fi
